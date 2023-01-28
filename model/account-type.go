@@ -25,7 +25,7 @@ var accountTypeStringValues = map[AccountType]string{
 	AccountTypeLiability: "liability",
 	AccountTypeExpense:   "expense",
 	AccountTypeRevenue:   "revenue",
-	AccountTypeEquity:    "quity",
+	AccountTypeEquity:    "equity",
 }
 
 var accountTypeStringToValue map[string]AccountType

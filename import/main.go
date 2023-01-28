@@ -291,14 +291,14 @@ func main() {
 			if otherAccountID == "" {
 				otherAccountID = unknownIncome.ID
 			}
-			values["dt_acc_id"] = otherAccountID
-			values["ct_acc_id"] = thisBankAccount.ID
+			values["ct_acc_id"] = otherAccountID
+			values["dt_acc_id"] = thisBankAccount.ID
 		} else {
 			if otherAccountID == "" {
 				otherAccountID = unknownExpense.ID
 			}
-			values["ct_acc_id"] = otherAccountID
-			values["dt_acc_id"] = thisBankAccount.ID
+			values["dt_acc_id"] = otherAccountID
+			values["ct_acc_id"] = thisBankAccount.ID
 		}
 
 		if _, err := db.Db().NamedExec(
